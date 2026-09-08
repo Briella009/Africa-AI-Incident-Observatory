@@ -7,6 +7,8 @@
 ![License](https://img.shields.io/badge/code-MIT-blue)
 ![Data](https://img.shields.io/badge/data-CC%20BY%204.0-green)
 
+**Seed release:** v0.1.0 · 17 curated records · 9 primary African countries · locally validated 8 September 2026
+
 ## Why this exists
 
 AI failures become useful public evidence only when they are documented consistently enough to compare, audit and learn from.
