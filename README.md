@@ -2,7 +2,7 @@
 
 **A source-traceable, open dataset for documenting AI incidents affecting African people, institutions and information environments.**
 
-[![Validate data](https://github.com/Briella009/Blessing/actions/workflows/validate-data.yml/badge.svg)](https://github.com/Briella009/Blessing/actions/workflows/validate-data.yml)
+[![Validate data](https://github.com/Briella009/Africa-AI-Incident-Observatory/actions/workflows/validate-data.yml/badge.svg)](https://github.com/Briella009/Africa-AI-Incident-Observatory/actions/workflows/validate-data.yml)
 ![Records](https://img.shields.io/badge/verified%20seed%20records-17-0f766e)
 ![License](https://img.shields.io/badge/code-MIT-blue)
 ![Data](https://img.shields.io/badge/data-CC%20BY%204.0-green)
@@ -40,7 +40,7 @@ The **Africa AI Incident Observatory (AAIO)** is an independent, open-data respo
 - `docs/publication-brief.md` — public-facing research framing, findings and claim limits
 - `scripts/validate.py` — deterministic dataset validator
 - `scripts/analyze.py` — reproducible summary statistics
-- `app.py` — local Streamlit explorer
+- `app.py` — interactive Streamlit explorer
 - `.github/ISSUE_TEMPLATE/incident_submission.yml` — structured community submission template
 
 ## Seed release
