@@ -2,10 +2,13 @@
 
 **A source-traceable, open dataset for documenting AI incidents affecting African people, institutions and information environments.**
 
+[![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://africa-ai-incident-observatory-zqnb3myucyuxy7ok4wsxc3.streamlit.app/)
 [![Validate data](https://github.com/Briella009/Africa-AI-Incident-Observatory/actions/workflows/validate-data.yml/badge.svg)](https://github.com/Briella009/Africa-AI-Incident-Observatory/actions/workflows/validate-data.yml)
 ![Records](https://img.shields.io/badge/verified%20seed%20records-17-0f766e)
 ![License](https://img.shields.io/badge/code-MIT-blue)
 ![Data](https://img.shields.io/badge/data-CC%20BY%204.0-green)
+
+**Live dashboard:** https://africa-ai-incident-observatory-zqnb3myucyuxy7ok4wsxc3.streamlit.app/
 
 **Seed release:** v0.1.0 · 17 curated records · 9 primary African countries · locally validated 8 September 2026
 
@@ -25,6 +28,12 @@ The **Africa AI Incident Observatory (AAIO)** is an independent, open-data respo
 - [OECD AI Incidents and Hazards Monitor methodology](https://oecd.ai/en/incidents-methodology)
 - [NIST AI Risk Management Framework 1.0](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10)
 - [African Union Continental Artificial Intelligence Strategy](https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy)
+
+## Explore the live dashboard
+
+The Streamlit explorer lets readers filter the seed dataset by country, year, sector, severity and evidence confidence, inspect individual incident records, compare evidence quality, review the separate watchlist and download filtered data.
+
+[Open the live Africa AI Incident Observatory dashboard](https://africa-ai-incident-observatory-zqnb3myucyuxy7ok4wsxc3.streamlit.app/)
 
 ## What is in the repository
 
