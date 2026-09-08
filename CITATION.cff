@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use the Africa AI Incident Observatory, please cite it using this metadata."
+title: "Africa AI Incident Observatory"
+type: dataset
+authors:
+  - family-names: "Ezeobioha"
+    given-names: "Blessing"
+    orcid: "https://orcid.org/0009-0005-9972-9380"
+repository-code: "https://github.com/Briella009/Blessing"
+url: "https://github.com/Briella009/Blessing"
+license: "CC-BY-4.0"
+version: "0.1.0"
+date-released: "2026-09-08"
+keywords:
+  - artificial intelligence
+  - AI incidents
+  - Africa
+  - AI governance
+  - cybersecurity
+  - public interest technology

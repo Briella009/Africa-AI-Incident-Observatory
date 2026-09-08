@@ -1,0 +1,25 @@
+name: Data correction
+description: Correct or update an existing AAIO record
+title: "[Correction] "
+labels: ["data-correction"]
+body:
+  - type: input
+    id: incident
+    attributes:
+      label: Incident ID
+      placeholder: AAIO-0001
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is inaccurate or outdated?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source evidence for the correction
+      description: Include public URLs and explain exactly what they establish.
+    validations:
+      required: true

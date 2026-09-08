@@ -1,0 +1,65 @@
+name: Incident submission
+description: Propose a source-traceable AI incident with an African nexus
+title: "[Incident] "
+labels: ["incident-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not submit private personal data, credentials, graphic abuse material or unsupported allegations."
+  - type: input
+    id: country
+    attributes:
+      label: Primary African country
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Earliest supported incident date
+      description: YYYY-MM-DD if known
+    validations:
+      required: true
+  - type: textarea
+    id: event
+    attributes:
+      label: What happened?
+      description: Use neutral language and separate verified facts from allegations.
+    validations:
+      required: true
+  - type: textarea
+    id: ai_link
+    attributes:
+      label: Evidence that AI was materially involved
+    validations:
+      required: true
+  - type: textarea
+    id: harm
+    attributes:
+      label: Realised harm or material adverse effect
+    validations:
+      required: true
+  - type: input
+    id: source1
+    attributes:
+      label: Strongest public source URL
+    validations:
+      required: true
+  - type: input
+    id: source2
+    attributes:
+      label: Second source URL (if available)
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: What remains uncertain?
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Submission checks
+      options:
+        - label: I have not included private credentials or sensitive personal data.
+          required: true
+        - label: I understand that submission does not guarantee inclusion in the core dataset.
+          required: true
