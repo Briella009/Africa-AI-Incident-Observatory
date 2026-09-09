@@ -15,6 +15,7 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python scripts/validate.py
+      - run: python scripts/validate_multilingual.py
       - run: pytest -q
       - name: Smoke-test deterministic interoperability export
         run: |
