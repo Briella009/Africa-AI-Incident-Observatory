@@ -16,6 +16,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scripts/validate.py
       - run: python scripts/validate_multilingual.py
+      - run: python scripts/validate_operational.py
       - run: pytest -q
       - name: Smoke-test deterministic interoperability export
         run: |

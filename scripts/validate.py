@@ -52,9 +52,15 @@ def main():
             errors.append(f"Core record may not have D confidence: {r['incident_id']}")
         if r.get('incident_or_hazard')!='incident':
             errors.append(f"Seed core must be realised incident: {r['incident_id']}")
-        for k in ('source_1_url','source_2_url','aiid_url'):
+        for k in ('source_1_url','source_2_url'):
             if not valid_url(r.get(k,'')):
                 errors.append(f"Invalid URL {k}: {r['incident_id']}")
+        aiid_id=r.get('aiid_id','').strip()
+        aiid_url=r.get('aiid_url','').strip()
+        if bool(aiid_id) != bool(aiid_url):
+            errors.append(f"AIID ID/URL must both be present or both blank: {r['incident_id']}")
+        if aiid_url and not valid_url(aiid_url):
+            errors.append(f"Invalid URL aiid_url: {r['incident_id']}")
         score,band=severity(r)
         if r['severity_score']!=score:
             errors.append(f"Severity score mismatch {r['incident_id']}: {r['severity_score']} != {score}")
