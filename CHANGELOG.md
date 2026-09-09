@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.2 - 2026-09-09
+
+### Added
+- A source-led multilingual incident register with initial francophone, arabophone and lusophone African cases.
+- Preservation of original-language source URLs and headlines alongside conservative English curator summaries.
+- Explicit translation method, translation-uncertainty and AI-attribution-strength fields.
+- A documented multilingual evidence and core-promotion protocol.
+- Automated validation and tests requiring all three issue #2 language families, source provenance and translation calibration.
+
+### Changed
+- CI now validates multilingual evidence separately from the core incident dataset and interoperability export.
+
 ## 0.1.1 - 2026-09-09
 
 ### Added
