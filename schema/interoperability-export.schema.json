@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Briella009/Africa-AI-Incident-Observatory/blob/main/schema/interoperability-export.schema.json",
+  "title": "AAIO Interoperability Export v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["export_format", "export_schema_version", "mapping_version", "disclaimer", "source_dataset", "mapping", "records"],
+  "properties": {
+    "export_format": {"const": "AAIO Interoperability Export"},
+    "export_schema_version": {"const": "1.0.0"},
+    "mapping_version": {"type": "string", "minLength": 1},
+    "disclaimer": {"type": "string", "minLength": 1},
+    "source_dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version", "path", "sha256", "record_count", "last_verified_values"],
+      "properties": {
+        "name": {"type": "string"},
+        "version": {"type": "string"},
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "record_count": {"type": "integer", "minimum": 1},
+        "last_verified_values": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true}
+      }
+    },
+    "mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "references", "status_definitions"],
+      "properties": {
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "references": {"type": "object"},
+        "status_definitions": {"type": "object"}
+      }
+    },
+    "records": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/record"}}
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url", "source_type"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "pattern": "^https://"},
+        "source_type": {"type": "string", "minLength": 1}
+      }
+    },
+    "criterion": {
+      "type": "object",
+      "required": ["value", "status", "source_fields"],
+      "properties": {
+        "value": {},
+        "status": {"enum": ["direct", "partial", "approximate", "unmapped", "cross_reference_only"]},
+        "source_fields": {"type": "array", "items": {"type": "string"}},
+        "note": {"type": "string"},
+        "raw_aaio_value": {}
+      },
+      "additionalProperties": false
+    },
+    "aaio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["incident_id", "title", "incident_date", "date_precision", "primary_country", "countries_affected", "region", "sector", "system_type", "ai_system_or_tool", "incident_or_hazard", "harm_types", "affected_parties", "summary", "reported_intent", "response", "regulatory_or_legal_outcome", "severity", "provenance"],
+      "properties": {
+        "incident_id": {"type": "string", "pattern": "^AAIO-[0-9]{4}$"},
+        "title": {"type": "string"},
+        "incident_date": {"type": "string"},
+        "date_precision": {"type": "string"},
+        "primary_country": {"type": "string"},
+        "countries_affected": {"type": "array", "items": {"type": "string"}},
+        "region": {"type": "string"},
+        "sector": {"type": "string"},
+        "system_type": {"type": "string"},
+        "ai_system_or_tool": {"type": "string"},
+        "incident_or_hazard": {"enum": ["incident", "hazard"]},
+        "harm_types": {"type": "array", "items": {"type": "string"}},
+        "affected_parties": {"type": "array", "items": {"type": "string"}},
+        "summary": {"type": "string"},
+        "reported_intent": {"type": "string"},
+        "response": {"type": "string"},
+        "regulatory_or_legal_outcome": {"type": "string"},
+        "severity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["magnitude", "scale", "criticality", "irreversibility", "score", "band", "framework"],
+          "properties": {
+            "magnitude": {"type": "integer", "minimum": 0, "maximum": 4},
+            "scale": {"type": "integer", "minimum": 0, "maximum": 4},
+            "criticality": {"type": "integer", "minimum": 0, "maximum": 4},
+            "irreversibility": {"type": "integer", "minimum": 0, "maximum": 4},
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "band": {"type": "string"},
+            "framework": {"type": "string"}
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["evidence_confidence", "qualification_basis", "source_calibration_notes", "last_verified", "curator", "sources"],
+          "properties": {
+            "evidence_confidence": {"enum": ["A", "B", "C", "D"]},
+            "qualification_basis": {"type": "string"},
+            "source_calibration_notes": {"type": "string"},
+            "last_verified": {"type": "string"},
+            "curator": {"type": "string"},
+            "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}, "minItems": 1}
+          }
+        }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["aaio", "alignments", "mapping_gaps"],
+      "properties": {
+        "aaio": {"$ref": "#/$defs/aaio"},
+        "alignments": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["aiid_core", "oecd_common_reporting_framework"],
+          "properties": {
+            "aiid_core": {"type": "object"},
+            "oecd_common_reporting_framework": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["criteria", "strict_mandatory_mapping"],
+              "properties": {
+                "criteria": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29"],
+                  "properties": {
+                    "1": {"$ref": "#/$defs/criterion"}, "2": {"$ref": "#/$defs/criterion"}, "3": {"$ref": "#/$defs/criterion"}, "4": {"$ref": "#/$defs/criterion"}, "5": {"$ref": "#/$defs/criterion"}, "6": {"$ref": "#/$defs/criterion"}, "7": {"$ref": "#/$defs/criterion"}, "8": {"$ref": "#/$defs/criterion"}, "9": {"$ref": "#/$defs/criterion"}, "10": {"$ref": "#/$defs/criterion"}, "11": {"$ref": "#/$defs/criterion"}, "12": {"$ref": "#/$defs/criterion"}, "13": {"$ref": "#/$defs/criterion"}, "14": {"$ref": "#/$defs/criterion"}, "15": {"$ref": "#/$defs/criterion"}, "16": {"$ref": "#/$defs/criterion"}, "17": {"$ref": "#/$defs/criterion"}, "18": {"$ref": "#/$defs/criterion"}, "19": {"$ref": "#/$defs/criterion"}, "20": {"$ref": "#/$defs/criterion"}, "21": {"$ref": "#/$defs/criterion"}, "22": {"$ref": "#/$defs/criterion"}, "23": {"$ref": "#/$defs/criterion"}, "24": {"$ref": "#/$defs/criterion"}, "25": {"$ref": "#/$defs/criterion"}, "26": {"$ref": "#/$defs/criterion"}, "27": {"$ref": "#/$defs/criterion"}, "28": {"$ref": "#/$defs/criterion"}, "29": {"$ref": "#/$defs/criterion"}
+                  }
+                },
+                "strict_mandatory_mapping": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["criterion_ids", "complete", "missing_or_non_direct", "note"],
+                  "properties": {
+                    "criterion_ids": {"const": [1, 2, 3, 4, 7, 10, 11]},
+                    "complete": {"type": "boolean"},
+                    "missing_or_non_direct": {"type": "array", "items": {"type": "integer"}},
+                    "note": {"type": "string"}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "mapping_gaps": {
+          "type": "object",
+          "required": ["aiid_core", "oecd_criteria_unmapped_or_non_direct", "aaio_fields_preserved_without_external_normalisation"],
+          "properties": {
+            "aiid_core": {"type": "array", "items": {"type": "string"}},
+            "oecd_criteria_unmapped_or_non_direct": {"type": "array", "items": {"type": "integer"}},
+            "aaio_fields_preserved_without_external_normalisation": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    }
+  }
+}
