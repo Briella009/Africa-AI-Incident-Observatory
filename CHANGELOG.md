@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.1 - 2026-09-09
+
+### Added
+- Versioned AIID/OECD semantic interoperability mapping covering all 29 OECD common-reporting criteria.
+- Deterministic interoperability JSON export with embedded source/mapping SHA-256 hashes and a companion manifest.
+- JSON Schema and tests for the interoperability export across all 17 v0.1.0 seed records.
+- Explicit mapping-gap handling that preserves AAIO evidence confidence and source-calibration notes without fabricating external taxonomy values.
+
+### Changed
+- Expanded interoperability documentation with field-level mapping, limitations, provenance rules and non-equivalence safeguards.
+- CI now smoke-tests interoperability export generation in addition to dataset validation and pytest.
+
 ## 0.1.0 - 2026-09-08
 
 ### Added

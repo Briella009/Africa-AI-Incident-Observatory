@@ -16,3 +16,8 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scripts/validate.py
       - run: pytest -q
+      - name: Smoke-test deterministic interoperability export
+        run: |
+          python scripts/export_interoperability.py \
+            --output /tmp/aaio-interoperability-v1.json \
+            --sha-output /tmp/aaio-interoperability-v1.sha256

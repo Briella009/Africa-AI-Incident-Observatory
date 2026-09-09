@@ -1,0 +1,106 @@
+{
+  "mapping_version": "1.0.0",
+  "project": "Africa AI Incident Observatory (AAIO)",
+  "purpose": "Semantic alignment for reuse; not an official AIID submission schema or OECD AIM ingest schema.",
+  "status_definitions": {
+    "direct": "AAIO captures the same concept closely enough to transfer without semantic inference.",
+    "partial": "AAIO captures only part of the target concept or lacks required subfields.",
+    "approximate": "AAIO captures related information, but semantics or controlled vocabularies differ.",
+    "unmapped": "AAIO does not currently capture the target concept in a defensible structured field.",
+    "cross_reference_only": "AAIO stores an external identifier or URL but does not reproduce the external record schema."
+  },
+  "references": {
+    "aiid_editor_guide": "https://incidentdatabase.ai/editors-guide/",
+    "aiid_taxonomies": "https://incidentdatabase.ai/taxonomies/",
+    "aiid_snapshots": "https://incidentdatabase.ai/research/snapshots",
+    "oecd_common_reporting_framework": "https://www.oecd.org/en/publications/towards-a-common-reporting-framework-for-ai-incidents_f326d4ac-en.html",
+    "oecd_aim_methodology": "https://oecd.ai/en/incidents-methodology"
+  },
+  "aiid_core": [
+    {
+      "concept": "incident_number",
+      "aaio_fields": ["aiid_id", "aiid_url"],
+      "status": "cross_reference_only",
+      "note": "Populated only when AAIO has already matched the event to an existing AIID incident."
+    },
+    {
+      "concept": "incident_title",
+      "aaio_fields": ["title"],
+      "status": "direct",
+      "note": "AAIO title is neutral and concise, but it is not claimed to be AIID editor-approved wording."
+    },
+    {
+      "concept": "description",
+      "aaio_fields": ["summary"],
+      "status": "direct",
+      "note": "AAIO summary is source-calibrated and preserved verbatim in the interoperability export."
+    },
+    {
+      "concept": "incident_date",
+      "aaio_fields": ["incident_date", "date_precision"],
+      "status": "partial",
+      "note": "AAIO records the earliest reasonably supported date and separately preserves its precision."
+    },
+    {
+      "concept": "developer_entities",
+      "aaio_fields": [],
+      "status": "unmapped",
+      "note": "AAIO v0.1.0 does not maintain normalized developer entity roles."
+    },
+    {
+      "concept": "deployer_entities",
+      "aaio_fields": [],
+      "status": "unmapped",
+      "note": "AAIO v0.1.0 does not maintain normalized deployer entity roles."
+    },
+    {
+      "concept": "harmed_or_nearly_harmed_parties",
+      "aaio_fields": ["affected_parties"],
+      "status": "approximate",
+      "note": "AAIO affected_parties is broader than AIID's normalized harmed/nearly harmed entity model and is exported only as candidate labels."
+    },
+    {
+      "concept": "supporting_reports",
+      "aaio_fields": ["source_1_name", "source_1_url", "source_1_type", "source_2_name", "source_2_url", "source_2_type"],
+      "status": "partial",
+      "note": "AAIO preserves source names, URLs and source types but not the complete metadata of an AIID report object."
+    },
+    {
+      "concept": "taxonomy_annotations",
+      "aaio_fields": [],
+      "status": "unmapped",
+      "note": "AIID supports multiple independent taxonomies. AAIO does not manufacture CSET, GMF, MIT or other taxonomy annotations."
+    }
+  ],
+  "oecd_common_reporting_framework": [
+    {"id": 1, "name": "Title", "dimension": "Incident metadata", "mandatory": true, "aaio_fields": ["title"], "status": "direct"},
+    {"id": 2, "name": "Description of the incident", "dimension": "Incident metadata", "mandatory": true, "aaio_fields": ["summary"], "status": "direct"},
+    {"id": 3, "name": "How is the AI system(s) related to the incident", "dimension": "Incident metadata", "mandatory": true, "aaio_fields": [], "status": "unmapped"},
+    {"id": 4, "name": "Submitter information", "dimension": "Incident metadata", "mandatory": true, "aaio_fields": ["curator"], "status": "partial"},
+    {"id": 5, "name": "Date of first known occurrence", "dimension": "Incident metadata", "mandatory": false, "aaio_fields": ["incident_date", "date_precision"], "status": "partial"},
+    {"id": 6, "name": "Country(ies) where incident occurred", "dimension": "Incident metadata", "mandatory": false, "aaio_fields": ["country"], "status": "partial"},
+    {"id": 7, "name": "Supporting material(s) about the incident", "dimension": "Incident metadata", "mandatory": true, "aaio_fields": ["source_1_name", "source_1_url", "source_1_type", "source_2_name", "source_2_url", "source_2_type"], "status": "direct"},
+    {"id": 8, "name": "Name and version of the AI system(s)/product(s)", "dimension": "Incident metadata", "mandatory": false, "aaio_fields": ["ai_system_or_tool"], "status": "partial"},
+    {"id": 9, "name": "Organisation(s) that developed and/or deployed the AI system", "dimension": "Incident metadata", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 10, "name": "Severity", "dimension": "Harm details", "mandatory": true, "aaio_fields": ["severity_score", "severity_band", "magnitude", "scale", "criticality", "irreversibility"], "status": "unmapped", "note": "AAIO's project severity rubric is not equivalent to OECD CRF severity categories and is never converted automatically."},
+    {"id": 11, "name": "Harm type", "dimension": "Harm details", "mandatory": true, "aaio_fields": ["harm_types"], "status": "approximate", "note": "AAIO harm descriptors are free-form project labels, not OECD controlled values."},
+    {"id": 12, "name": "Quantification of harm", "dimension": "Harm details", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 13, "name": "Incident linked to use of AI system(s) in unintended/wrongful way", "dimension": "Harm details", "mandatory": false, "aaio_fields": ["reported_intent"], "status": "unmapped", "note": "Reported intent is not equivalent to the OECD wrongful-use criterion."},
+    {"id": 14, "name": "Affected stakeholder(s)", "dimension": "People and planet", "mandatory": false, "aaio_fields": ["affected_parties"], "status": "approximate", "note": "AAIO labels are preserved but not silently converted to OECD stakeholder categories."},
+    {"id": 15, "name": "Adverse impacts on human rights or fundamental rights", "dimension": "People and planet", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 16, "name": "Associated AI Principles", "dimension": "People and planet", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 17, "name": "Industry(ies)", "dimension": "Economic context", "mandatory": false, "aaio_fields": ["sector"], "status": "approximate", "note": "AAIO sector labels are not ISIC-coded."},
+    {"id": 18, "name": "Business function(s) where the AI incident occurred", "dimension": "Economic context", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 19, "name": "Incident linked to the functioning of critical functions/infrastructure", "dimension": "Economic context", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 20, "name": "Breadth of deployment", "dimension": "Economic context", "mandatory": false, "aaio_fields": [], "status": "unmapped", "note": "AAIO scale is an impact dimension and must not be reused as deployment breadth."},
+    {"id": 21, "name": "Incident linked to the training data of AI system(s)", "dimension": "Data and input", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 22, "name": "Incident linked to the AI model", "dimension": "AI model", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 23, "name": "Usage rights", "dimension": "AI model", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 24, "name": "Incident linked to interaction of multiple AI systems", "dimension": "AI model", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 25, "name": "Task(s) of AI system(s)", "dimension": "Task and output", "mandatory": false, "aaio_fields": ["system_type"], "status": "unmapped", "note": "AAIO system_type is descriptive and is not converted to OECD task categories without manual review."},
+    {"id": 26, "name": "Maximum autonomy level of AI system(s)", "dimension": "Task and output", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 27, "name": "Action(s) taken", "dimension": "Other information", "mandatory": false, "aaio_fields": ["response"], "status": "partial", "note": "AAIO response is free text and is not automatically converted to OECD action categories."},
+    {"id": 28, "name": "Steps to reproduce the incident", "dimension": "Other information", "mandatory": false, "aaio_fields": [], "status": "unmapped"},
+    {"id": 29, "name": "Additional information", "dimension": "Other information", "mandatory": false, "aaio_fields": ["reported_intent", "regulatory_or_legal_outcome", "qualification_basis", "notes"], "status": "partial"}
+  ]
+}
