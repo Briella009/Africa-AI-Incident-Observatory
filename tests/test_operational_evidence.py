@@ -18,9 +18,12 @@ def test_operational_register_has_multiple_sectors():
 
 def test_healthcare_case_preserves_patient_harm_boundary():
     case = next(row for row in rows() if row['incident_id'] == 'AAIO-OP-0001')
-    assert '115' in case['summary']
-    assert '67' in case['summary']
-    assert 'does not infer patient injury' in case['summary']
+    summary = case['summary'].lower()
+    assert '115' in summary
+    # The source describes 67 harmful recommendations in final documentation;
+    # keep the test robust to spelling the number as words for editorial readability.
+    assert '67' in summary or 'sixty-seven' in summary
+    assert 'does not infer patient injury' in summary
     assert case['evidence_confidence'] == 'A'
     assert 'nature.com' in case['source_1_url']
     assert 'pubmed.ncbi.nlm.nih.gov' in case['source_2_url']
