@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use the Africa AI Incident Observatory, please cite it using this metadata."
+message: "If you use the Africa AI Incident Observatory, cite the exact archived release when reproducibility matters."
 title: "Africa AI Incident Observatory"
 type: dataset
 authors:
@@ -9,8 +9,23 @@ authors:
 repository-code: "https://github.com/Briella009/Africa-AI-Incident-Observatory"
 url: "https://github.com/Briella009/Africa-AI-Incident-Observatory"
 license: "CC-BY-4.0"
-version: "0.2.2"
+version: "0.2.3"
 date-released: "2026-09-16"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22789831"
+    description: "Concept DOI for all archived AAIO versions"
+references:
+  - type: dataset
+    title: "Africa AI Incident Observatory (AAIO) v0.2.0"
+    authors:
+      - family-names: "Ezeobioha"
+        given-names: "Blessing"
+        orcid: "https://orcid.org/0009-0005-9972-9380"
+    version: "0.2.0"
+    date-released: "2026-09-16"
+    doi: "10.5281/zenodo.22789832"
+    url: "https://zenodo.org/records/22789832"
 keywords:
   - artificial intelligence
   - AI incidents
