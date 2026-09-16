@@ -4,16 +4,17 @@
 
 [![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://aaio-africa.streamlit.app/)
 [![Validate data](https://github.com/Briella009/Africa-AI-Incident-Observatory/actions/workflows/validate-data.yml/badge.svg)](https://github.com/Briella009/Africa-AI-Incident-Observatory/actions/workflows/validate-data.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22789831.svg)](https://doi.org/10.5281/zenodo.22789831)
 ![Records](https://img.shields.io/badge/verified%20core%20records-19-0f766e)
-![Version](https://img.shields.io/badge/dataset-v0.2.2-516b78)
+![Version](https://img.shields.io/badge/dataset-v0.2.3-516b78)
 ![License](https://img.shields.io/badge/code-MIT-blue)
 ![Data](https://img.shields.io/badge/data-CC%20BY%204.0-green)
 
 **Dashboard:** https://aaio-africa.streamlit.app/
 
-**Current dataset:** v0.2.2 · 19 curated core records · 9 primary African countries · 3 multilingual source families · operational evidence provenance · AIID/OECD semantic interoperability · scheduled public-source resilience monitoring
+**Current dataset:** v0.2.3 · 19 curated core records · 9 primary African countries · 3 multilingual source families · operational evidence provenance · AIID/OECD semantic interoperability · scheduled public-source resilience monitoring · DOI-backed v0.2.0 archive
 
-**Quick links:** [Explore data](data/incidents.csv) · [Dashboard](https://aaio-africa.streamlit.app/) · [Methodology](docs/methodology.md) · [Dataset card](docs/dataset-card.md) · [Data dictionary](docs/data-dictionary.md) · [Interoperability](docs/interoperability.md) · [Source resilience](docs/source-resilience.md) · [Contribute](https://github.com/Briella009/Africa-AI-Incident-Observatory/issues/new?template=incident_submission.yml) · [Citation](CITATION.cff)
+**Quick links:** [Explore data](data/incidents.csv) · [Dashboard](https://aaio-africa.streamlit.app/) · [Methodology](docs/methodology.md) · [Dataset card](docs/dataset-card.md) · [Data dictionary](docs/data-dictionary.md) · [Interoperability](docs/interoperability.md) · [Source resilience](docs/source-resilience.md) · [Archived releases](metadata/archived-releases.json) · [Contribute](https://github.com/Briella009/Africa-AI-Incident-Observatory/issues/new?template=incident_submission.yml) · [Citation](CITATION.cff)
 
 ## Why this exists
 
@@ -36,7 +37,16 @@ The **Africa AI Incident Observatory (AAIO)** is an independent, open-data respo
 | **Interoperability does not fabricate equivalence** | Non-equivalent OECD/AIID fields remain partial, approximate or unmapped rather than receiving invented normalized values. |
 | **Material changes are auditable** | Core-record promotions and substantive corrections are tracked in an append-only history ledger. |
 | **Machine-readable research metadata** | Data Package metadata, a tabular schema, Schema.org JSON-LD and `CITATION.cff` make the dataset easier to inspect and reuse programmatically. |
+| **Persistent release provenance** | DOI-backed snapshots are mapped to exact source commits, release URLs and deposited-file checksums rather than being treated as interchangeable with the evolving branch. |
 | **Public evidence links are monitored over time** | A weekly audit identifies broken, blocked or unstable evidence URLs without confusing temporary web failures with evidence invalidity. |
+
+## v0.2.3 — DOI-backed research archive
+
+The **19 core incidents remain unchanged**. v0.2.3 connects the evolving repository to AAIO's first verified persistent research-data archive.
+
+AAIO v0.2.0 is archived on Zenodo as a Dataset with version DOI **`10.5281/zenodo.22789832`**. The concept DOI **`10.5281/zenodo.22789831`** represents the AAIO archive across versions. The archive is tied to source commit `e5826b33fd8f4b9926a39707870e9ec93d739d4d`; machine-readable provenance is recorded in [`metadata/archived-releases.json`](metadata/archived-releases.json).
+
+DOI minting is treated as persistent research infrastructure, not as evidence of independent adoption, citation or institutional use.
 
 ## v0.2.2 — source resilience
 
@@ -57,7 +67,7 @@ v0.2.1 made AAIO easier to discover, understand, validate and reuse without chan
 - automated metadata validation in CI; and
 - version-aware release-integrity checks that preserve historical promotion provenance.
 
-These additions are **FAIR-oriented**, not a claim of formal FAIR certification. A persistent DOI-backed archive remains an external release step and will not be claimed before it exists.
+These additions are **FAIR-oriented**, not a claim of formal FAIR certification.
 
 ## Dataset snapshot
 
@@ -119,6 +129,7 @@ Promotion into the core dataset requires a credible AI linkage, a realised event
 - `schema/core-table-schema.json` — tabular schema for downstream CSV tooling
 - `datapackage.json` — machine-readable resource descriptor
 - `metadata/aaio-dataset.jsonld` — Schema.org dataset metadata
+- `metadata/archived-releases.json` — DOI archive/version/commit/checksum registry
 - `CITATION.cff` — citation metadata
 
 ### Methods and research documentation
@@ -141,7 +152,7 @@ Promotion into the core dataset requires a credible AI linkage, a realised event
 - `scripts/validate_multilingual.py` — multilingual provenance validation
 - `scripts/validate_operational.py` — operational evidence and promotion validation
 - `scripts/validate_release.py` — version, citation, promotion and history consistency
-- `scripts/validate_metadata.py` — machine-readable metadata/resource consistency
+- `scripts/validate_metadata.py` — machine-readable metadata, archive DOI and resource consistency
 - `scripts/export_interoperability.py` — deterministic AIID/OECD semantic export
 - `scripts/check_source_health.py` — public evidence inventory and non-blocking link-health audit
 - `app.py` — interactive Streamlit explorer
@@ -247,9 +258,18 @@ Please do **not** submit private personal data, leaked credentials, graphic abus
 
 ## Citation and archiving
 
-Please cite the repository using [`CITATION.cff`](CITATION.cff). AAIO does **not** claim a DOI until a stable release has actually been archived and the DOI verified.
+For analysis that depends on the exact archived dataset, cite **AAIO v0.2.0**:
 
-For exact reproducibility, future DOI-backed citations should identify the specific dataset release rather than only the evolving `main` branch.
+> Ezeobioha, B. (2026). *Africa AI Incident Observatory (AAIO) v0.2.0* (Version 0.2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22789832
+
+- **Version DOI — v0.2.0:** https://doi.org/10.5281/zenodo.22789832
+- **Concept DOI — all archived AAIO versions:** https://doi.org/10.5281/zenodo.22789831
+- **Zenodo record:** https://zenodo.org/records/22789832
+- **Exact source commit:** `e5826b33fd8f4b9926a39707870e9ec93d739d4d`
+
+Use the **version DOI** when exact reproducibility matters. Use the **concept DOI** when referring to AAIO as an evolving archived research resource. The current `main` branch may be newer than the latest archived snapshot, so the two should not be treated as byte-identical.
+
+See [`CITATION.cff`](CITATION.cff) and [`metadata/archived-releases.json`](metadata/archived-releases.json) for machine-readable citation and archive provenance.
 
 ## Author
 
@@ -258,8 +278,3 @@ Cybersecurity practitioner and AI researcher working across threat intelligence,
 
 - GitHub: [@Briella009](https://github.com/Briella009)
 - ORCID: [0009-0005-9972-9380](https://orcid.org/0009-0005-9972-9380)
-- LinkedIn: [Blessing Ezeobioha](https://www.linkedin.com/in/blessing-ezeobioha-)
-
-## Status
-
-**v0.2.2 research-data release.** The dataset evolves as sources are corrected, incidents are added, multilingual evidence is promoted or classifications are re-evaluated. Material core-record changes are recorded in `data/record_history.csv`; release-level changes are recorded in `CHANGELOG.md`; public evidence links are monitored separately as operational maintenance metadata.
