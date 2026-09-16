@@ -1,0 +1,21 @@
+{
+  "project": "Africa AI Incident Observatory",
+  "concept_doi": "10.5281/zenodo.22789831",
+  "concept_doi_url": "https://doi.org/10.5281/zenodo.22789831",
+  "releases": [
+    {
+      "version": "0.2.0",
+      "publication_date": "2026-09-16",
+      "resource_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "source_commit": "e5826b33fd8f4b9926a39707870e9ec93d739d4d",
+      "github_release": "https://github.com/Briella009/Africa-AI-Incident-Observatory/releases/tag/v0.2.0",
+      "zenodo_record": "https://zenodo.org/records/22789832",
+      "version_doi": "10.5281/zenodo.22789832",
+      "version_doi_url": "https://doi.org/10.5281/zenodo.22789832",
+      "archive_file": "Africa-AI-Incident-Observatory-v0.2.0-Zenodo-Dataset.zip",
+      "archive_md5": "686c5ad3f495e8e71342d4ff8053d096",
+      "archive_sha256": "d49f11414e73e3bcdc9525366737fd9e59a309c47ee6f3203f4b9c147045cc9a"
+    }
+  ]
+}
