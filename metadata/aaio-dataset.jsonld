@@ -4,11 +4,21 @@
   "name": "Africa AI Incident Observatory",
   "alternateName": "AAIO",
   "description": "A source-traceable open research dataset documenting publicly evidenced AI incidents affecting African people, institutions and information environments, with explicit evidence confidence, provenance, multilingual discovery and operational-review layers.",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "datePublished": "2026-09-16",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "url": "https://github.com/Briella009/Africa-AI-Incident-Observatory",
-  "identifier": "https://github.com/Briella009/Africa-AI-Incident-Observatory",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5281/zenodo.22789831",
+    "url": "https://doi.org/10.5281/zenodo.22789831"
+  },
+  "sameAs": [
+    "https://doi.org/10.5281/zenodo.22789831",
+    "https://aaio-africa.streamlit.app/"
+  ],
+  "citation": "https://doi.org/10.5281/zenodo.22789832",
   "creator": {
     "@type": "Person",
     "name": "Blessing Ezeobioha",

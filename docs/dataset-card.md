@@ -21,14 +21,16 @@ AAIO was created to make that evidence easier to inspect, challenge, reuse and s
 
 ## Version
 
-- Dataset version: `0.2.2`
+- Dataset version: `0.2.3`
 - Release line: `0.2.x`
 - Canonical version marker: `VERSION`
 - Core data: `data/incidents.csv`
 - Data license: CC BY 4.0
 - Code license: MIT
+- Concept DOI: `10.5281/zenodo.22789831`
+- Archived v0.2.0 DOI: `10.5281/zenodo.22789832`
 
-AAIO uses semantic-style dataset versioning. See `docs/release-policy.md`.
+AAIO uses semantic-style dataset versioning. See `docs/release-policy.md`. The DOI-backed v0.2.0 snapshot is preserved separately from the evolving `main` branch; archive provenance is recorded in `metadata/archived-releases.json`.
 
 ## Composition
 
@@ -118,14 +120,14 @@ The repository CI validates:
 - operational promotion links;
 - release/version consistency;
 - material history requirements;
-- machine-readable dataset metadata; and
+- machine-readable dataset metadata and archive DOI relationships; and
 - deterministic AIID/OECD interoperability export generation.
 
 Passing CI means the repository satisfies its declared structural and consistency checks. It does **not** certify that every external source is permanently available or that every incident interpretation is beyond dispute.
 
 ## Source persistence monitoring
 
-AAIO v0.2.2 adds a separate maintenance control for public evidence URLs. `scripts/check_source_health.py` builds a deduplicated inventory of source links used across the core, multilingual, operational and watchlist layers and can test whether those URLs are practically reachable from a GitHub runner.
+AAIO v0.2.2 added a separate maintenance control for public evidence URLs. `scripts/check_source_health.py` builds a deduplicated inventory of source links used across the core, multilingual, operational and watchlist layers and can test whether those URLs are practically reachable from a GitHub runner.
 
 The audit distinguishes missing pages from rate limits, bot blocks, server failures and network errors. It is deliberately **non-blocking**: HTTP reachability is not evidence validity, and a temporary 403, 429 or timeout must not automatically change a record's confidence or inclusion status.
 
@@ -182,13 +184,18 @@ See `docs/interoperability.md` and `mapping/interoperability-map-v1.json`.
 
 - `datapackage.json` describes repository data resources in a Data Package-style descriptor.
 - `metadata/aaio-dataset.jsonld` exposes Schema.org `Dataset` metadata for machine discovery.
-- `CITATION.cff` contains citation metadata.
+- `metadata/archived-releases.json` maps archived versions to exact source commits, GitHub releases, Zenodo records, DOI relationships and deposited-file checksums.
+- `CITATION.cff` contains current-project citation metadata and references the archived v0.2.0 dataset.
 
-AAIO does not claim a DOI until a DOI-minting repository has archived and verified a stable release.
+AAIO's first verified DOI-backed archive is v0.2.0. The version DOI is `10.5281/zenodo.22789832`; the concept DOI for all archived AAIO versions is `10.5281/zenodo.22789831`.
 
 ## Citation
 
-Use `CITATION.cff` for the current repository citation. When a version-specific DOI becomes available, cite the archived release when exact reproducibility matters.
+For work that depends on the exact archived v0.2.0 dataset, cite:
+
+> Ezeobioha, B. (2026). *Africa AI Incident Observatory (AAIO) v0.2.0* (Version 0.2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22789832
+
+Use the concept DOI `10.5281/zenodo.22789831` when referring to AAIO as an evolving archived research resource rather than a specific dataset snapshot. `CITATION.cff` remains the repository-level citation metadata for the current branch.
 
 ## Maintainer
 

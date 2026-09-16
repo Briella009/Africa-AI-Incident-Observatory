@@ -16,6 +16,18 @@ Examples include:
 
 GitHub stars, page views and self-authored social posts may be useful engagement signals, but they are not treated here as independent evidence that AAIO advanced the field.
 
+## Persistent archive
+
+AAIO v0.2.0 has a public Zenodo dataset archive tied to the exact source commit `e5826b33fd8f4b9926a39707870e9ec93d739d4d`.
+
+| Archived release | Version DOI | Concept DOI | Public record |
+|---|---|---|---|
+| v0.2.0 | `10.5281/zenodo.22789832` | `10.5281/zenodo.22789831` | https://zenodo.org/records/22789832 |
+
+The version DOI identifies the archived v0.2.0 dataset. The concept DOI identifies the evolving AAIO archive across Zenodo versions. The existence of a DOI is research-infrastructure evidence, **not** evidence of independent adoption, citation or institutional use.
+
+Machine-readable archive provenance, including the GitHub release, exact source commit and deposited ZIP checksums, is recorded in `metadata/archived-releases.json`.
+
 ## Verified external reuse
 
 | Date | Evidence type | Organisation / person | What was reused or recognised | Public evidence |

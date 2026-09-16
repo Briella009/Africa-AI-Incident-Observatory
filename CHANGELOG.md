@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.3 - 2026-09-16
+
+### Added
+- Verified Zenodo archive metadata for AAIO v0.2.0, including version DOI `10.5281/zenodo.22789832` and concept DOI `10.5281/zenodo.22789831`.
+- `metadata/archived-releases.json` mapping the archived release to its exact source commit, GitHub release, Zenodo landing page and deposited ZIP checksums.
+- DOI relationship checks in machine-readable metadata validation.
+
+### Changed
+- README, dataset card, `CITATION.cff`, Data Package metadata and Schema.org JSON-LD now distinguish the evolving repository from the exact DOI-backed v0.2.0 snapshot.
+- `docs/impact.md` records the persistent archive separately from independent reuse or adoption evidence.
+
+### Research significance
+- v0.2.3 closes the provenance loop between the evolving AAIO repository and a stable, citable research-data snapshot without treating DOI minting as evidence of external adoption.
+
 ## 0.2.2 - 2026-09-16
 
 ### Added
