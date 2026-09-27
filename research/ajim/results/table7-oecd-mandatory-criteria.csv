@@ -1,0 +1,8 @@
+criterion_id,criterion_name,mapping_status
+1,Title,direct
+2,Description of the incident,direct
+3,How the AI system relates to the incident,unmapped
+4,Submitter information,partial
+7,Supporting materials about the incident,direct
+10,Severity,unmapped
+11,Harm type,approximate
