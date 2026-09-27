@@ -1,0 +1,4 @@
+layer,records,unique_primary_countries,status
+core,19,9,included
+multilingual_discovery,9,7,candidate_for_core
+watchlist,3,2,excluded_pending_AI_linkage
