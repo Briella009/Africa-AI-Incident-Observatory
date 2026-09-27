@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">AAIO core records by primary country</title>
+<desc id="desc">Horizontal bar chart of 19 frozen core records. Nigeria and South Africa have five records each, Kenya three, and six countries one each.</desc>
+<rect width="1200" height="760" fill="white"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111}.h{font-size:30px;font-weight:700}.s{font-size:18px;fill:#444}.l{font-size:18px}.v{font-size:18px;font-weight:700}.n{font-size:15px;fill:#555}.g{stroke:#ddd;stroke-width:1}</style>
+<text x="60" y="62" class="h">AAIO core records by primary country</text>
+<text x="60" y="98" class="s">Frozen core dataset, n=19. Counts describe documentation, not national prevalence.</text>
+<line x1="300" y1="135" x2="300" y2="650" class="g"/><line x1="460" y1="135" x2="460" y2="650" class="g"/><line x1="620" y1="135" x2="620" y2="650" class="g"/><line x1="780" y1="135" x2="780" y2="650" class="g"/><line x1="940" y1="135" x2="940" y2="650" class="g"/><line x1="1100" y1="135" x2="1100" y2="650" class="g"/>
+<text x="300" y="680" class="n" text-anchor="middle">0</text><text x="460" y="680" class="n" text-anchor="middle">1</text><text x="620" y="680" class="n" text-anchor="middle">2</text><text x="780" y="680" class="n" text-anchor="middle">3</text><text x="940" y="680" class="n" text-anchor="middle">4</text><text x="1100" y="680" class="n" text-anchor="middle">5</text>
+<text x="280" y="176" class="l" text-anchor="end">Nigeria</text><rect x="300" y="150" width="800" height="34" fill="#333"/><text x="1112" y="175" class="v">5</text>
+<text x="280" y="232" class="l" text-anchor="end">South Africa</text><rect x="300" y="206" width="800" height="34" fill="#333"/><text x="1112" y="231" class="v">5</text>
+<text x="280" y="288" class="l" text-anchor="end">Kenya</text><rect x="300" y="262" width="480" height="34" fill="#555"/><text x="792" y="287" class="v">3</text>
+<text x="280" y="344" class="l" text-anchor="end">Burkina Faso</text><rect x="300" y="318" width="160" height="34" fill="#888"/><text x="472" y="343" class="v">1</text>
+<text x="280" y="400" class="l" text-anchor="end">Ghana</text><rect x="300" y="374" width="160" height="34" fill="#888"/><text x="472" y="399" class="v">1</text>
+<text x="280" y="456" class="l" text-anchor="end">Rwanda</text><rect x="300" y="430" width="160" height="34" fill="#888"/><text x="472" y="455" class="v">1</text>
+<text x="280" y="512" class="l" text-anchor="end">Sudan</text><rect x="300" y="486" width="160" height="34" fill="#888"/><text x="472" y="511" class="v">1</text>
+<text x="280" y="568" class="l" text-anchor="end">Tanzania</text><rect x="300" y="542" width="160" height="34" fill="#888"/><text x="472" y="567" class="v">1</text>
+<text x="280" y="624" class="l" text-anchor="end">Zambia</text><rect x="300" y="598" width="160" height="34" fill="#888"/><text x="472" y="623" class="v">1</text>
+<text x="60" y="725" class="n">Nigeria, South Africa and Kenya account for 13/19 core records (68.4%).</text>
+</svg>
