@@ -1,0 +1,14 @@
+framework,status,count,percent
+OECD_29,direct,3,10.3
+OECD_29,partial,6,20.7
+OECD_29,approximate,3,10.3
+OECD_29,unmapped,17,58.6
+OECD_mandatory_7,direct,3,42.9
+OECD_mandatory_7,partial,1,14.3
+OECD_mandatory_7,approximate,1,14.3
+OECD_mandatory_7,unmapped,2,28.6
+AIID_core_9,direct,2,22.2
+AIID_core_9,partial,2,22.2
+AIID_core_9,approximate,1,11.1
+AIID_core_9,unmapped,3,33.3
+AIID_core_9,cross_reference_only,1,11.1
