@@ -1,0 +1,7 @@
+layer,evidence_confidence,count,percent_within_layer
+core,A,10,52.6
+core,B,8,42.1
+core,C,1,5.3
+multilingual_candidate,A,7,77.8
+multilingual_candidate,B,2,22.2
+multilingual_candidate,C,0,0.0
