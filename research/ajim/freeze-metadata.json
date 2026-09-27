@@ -1,0 +1,23 @@
+{
+  "analysis_date": "2026-09-27",
+  "base_commit": "90db01070243f3da23ea472578d2f4d2df79d964",
+  "dataset_version": "0.2.3",
+  "input_git_blob_sha": {
+    "data/incidents.csv": "f40b5a6d90dbbc7b0682f5d66071855f14f2b132",
+    "data/watchlist.csv": "0d5404be66add6031a7d72185cb0c3ff8c729db6",
+    "mapping/interoperability-map-v1.json": "1d8b7c770e5bf67095fcbf336d701c512396d8fa",
+    "research/ajim/frozen/multilingual-analysis.csv": "427f5958d1b6919f2dfa6972e4d5b25579c374e3"
+  },
+  "frozen_counts": {
+    "core_incidents": 19,
+    "multilingual_candidates": 9,
+    "watchlist_records": 3,
+    "oecd_mapping_criteria": 29
+  },
+  "validation": {
+    "independent_numeric_recheck": "PASS",
+    "numeric_checks_recomputed": 15,
+    "failed_checks": 0
+  },
+  "claim_boundary": "Counts describe the frozen documentation corpus and must not be interpreted as national AI incident prevalence."
+}
