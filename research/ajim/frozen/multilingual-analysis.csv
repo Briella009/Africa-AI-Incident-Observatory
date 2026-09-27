@@ -1,0 +1,10 @@
+record_id,country,region,source_language,language_family,source_name,source_type,ai_attribution_strength,translation_uncertainty,evidence_confidence,core_status
+AAIO-ML-0001,Burkina Faso,West Africa,French,francophone,AFP Factuel,Independent fact-check,probable,low,B,candidate_for_core
+AAIO-ML-0002,Morocco,North Africa,Arabic,arabophone,Misbar,Independent fact-check,confirmed,medium,A,candidate_for_core
+AAIO-ML-0003,Angola,Southern Africa,Portuguese,lusophone,Verifica.ao,Local independent fact-check,confirmed,low,B,candidate_for_core
+AAIO-ML-0004,Senegal,West Africa,French,francophone,AFP Factuel,Independent fact-check,confirmed,low,A,candidate_for_core
+AAIO-ML-0005,Niger,West Africa,French,francophone,AFP Factuel,Independent fact-check,confirmed,low,A,candidate_for_core
+AAIO-ML-0006,Algeria,North Africa,Arabic,arabophone,Misbar,Independent fact-check,confirmed,medium,A,candidate_for_core
+AAIO-ML-0007,Egypt,North Africa,Arabic,arabophone,Misbar,Independent fact-check,confirmed,medium,A,candidate_for_core
+AAIO-ML-0008,Angola,Southern Africa,Portuguese,lusophone,Lusa Verifica,News-agency fact-check,confirmed,low,A,candidate_for_core
+AAIO-ML-0009,Angola,Southern Africa,Portuguese,lusophone,Verifica.ao,Local independent fact-check,confirmed,low,A,candidate_for_core
