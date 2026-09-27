@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">OECD interoperability mapping status</title>
+<desc id="desc">Horizontal bar chart of mapping status across 29 OECD reporting criteria: 17 unmapped, 6 partial, 3 approximate and 3 direct.</desc>
+<rect width="1200" height="760" fill="white"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111}.h{font-size:30px;font-weight:700}.s{font-size:18px;fill:#444}.l{font-size:20px}.v{font-size:18px;font-weight:700}.n{font-size:15px;fill:#555}.g{stroke:#ddd;stroke-width:1}</style>
+<text x="60" y="62" class="h">OECD interoperability mapping status</text>
+<text x="60" y="98" class="s">AAIO fields mapped against all 29 OECD common reporting-framework criteria</text>
+<line x1="280" y1="155" x2="280" y2="590" class="g"/><line x1="475" y1="155" x2="475" y2="590" class="g"/><line x1="670" y1="155" x2="670" y2="590" class="g"/><line x1="865" y1="155" x2="865" y2="590" class="g"/><line x1="1060" y1="155" x2="1060" y2="590" class="g"/>
+<text x="280" y="620" class="n" text-anchor="middle">0</text><text x="475" y="620" class="n" text-anchor="middle">5</text><text x="670" y="620" class="n" text-anchor="middle">10</text><text x="865" y="620" class="n" text-anchor="middle">15</text><text x="1060" y="620" class="n" text-anchor="middle">20</text>
+<text x="255" y="222" class="l" text-anchor="end">Unmapped</text><rect x="280" y="188" width="663" height="48" fill="#333"/><text x="958" y="221" class="v">17</text>
+<text x="255" y="322" class="l" text-anchor="end">Partial</text><rect x="280" y="288" width="234" height="48" fill="#666"/><text x="529" y="321" class="v">6</text>
+<text x="255" y="422" class="l" text-anchor="end">Approximate</text><rect x="280" y="388" width="117" height="48" fill="#999"/><text x="412" y="421" class="v">3</text>
+<text x="255" y="522" class="l" text-anchor="end">Direct</text><rect x="280" y="488" width="117" height="48" fill="#bbb"/><text x="412" y="521" class="v">3</text>
+<text x="60" y="680" class="n">17/29 criteria (58.6%) are unmapped; only 3/29 (10.3%) transfer directly without semantic inference.</text>
+<text x="60" y="710" class="n">Mapping status measures schema transferability, not OECD compliance or evidence quality.</text>
+</svg>
