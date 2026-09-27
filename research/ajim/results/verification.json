@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "verification_date": "2026-09-27",
+  "checks_recomputed_from_frozen_inputs": 15,
+  "failed_checks": [],
+  "verified_metrics": [
+    "core record count",
+    "watchlist record count",
+    "multilingual candidate count",
+    "core unique-country count",
+    "new countries from multilingual discovery",
+    "cumulative unique-country count",
+    "country-coverage increase percentage",
+    "multilingual records in newly represented countries",
+    "multilingual records in newly represented countries percentage",
+    "populated AIID cross-reference count",
+    "populated AIID cross-reference percentage",
+    "OECD unmapped criterion count",
+    "OECD direct criterion count",
+    "OECD unmapped percentage",
+    "OECD mandatory direct percentage"
+  ],
+  "recomputed_distributions": {
+    "core_evidence_confidence": {"A": 10, "B": 8, "C": 1},
+    "multilingual_evidence_confidence": {"A": 7, "B": 2},
+    "oecd_mapping_status": {"direct": 3, "partial": 6, "approximate": 3, "unmapped": 17},
+    "oecd_mandatory_status": {"direct": 3, "partial": 1, "approximate": 1, "unmapped": 2}
+  }
+}
