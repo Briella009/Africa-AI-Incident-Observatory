@@ -1,0 +1,22 @@
+layer,pattern,category,count,percent_within_layer
+core,AIID_cross_reference,present,17,89.5
+core,AIID_cross_reference,absent,2,10.5
+core,primary_source_type,Curated incident database,17,89.5
+core,primary_source_type,Peer-reviewed research,1,5.3
+core,primary_source_type,Primary judicial record,1,5.3
+core,secondary_source_type,Independent fact-check via AIID record,6,31.6
+core,secondary_source_type,Independent fact-check,2,10.5
+core,secondary_source_type,Independent journalism via AIID record,2,10.5
+core,secondary_source_type,Independent journalism,1,5.3
+core,secondary_source_type,Local journalism,1,5.3
+core,secondary_source_type,Independent journalism with developer statement,1,5.3
+core,secondary_source_type,Corporate warning via AIID record,1,5.3
+core,secondary_source_type,Primary government document,1,5.3
+core,secondary_source_type,Primary government statement,1,5.3
+core,secondary_source_type,Single-source record,1,5.3
+core,secondary_source_type,Biomedical index,1,5.3
+core,secondary_source_type,Primary judicial record,1,5.3
+multilingual_candidate,source_organisation,AFP Factuel,3,33.3
+multilingual_candidate,source_organisation,Misbar,3,33.3
+multilingual_candidate,source_organisation,Verifica.ao,2,22.2
+multilingual_candidate,source_organisation,Lusa Verifica,1,11.1
