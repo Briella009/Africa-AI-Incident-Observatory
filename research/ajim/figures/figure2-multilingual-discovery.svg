@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Multilingual discovery effect</title>
+<desc id="desc">Grouped bar chart showing three candidate records in each target language, with three unique countries for French, three for Arabic, and one for Portuguese. New countries relative to the core are two, three and one respectively.</desc>
+<rect width="1200" height="760" fill="white"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111}.h{font-size:30px;font-weight:700}.s{font-size:18px;fill:#444}.l{font-size:18px}.v{font-size:17px;font-weight:700}.n{font-size:15px;fill:#555}.g{stroke:#ddd;stroke-width:1}</style>
+<text x="60" y="62" class="h">Effect of multilingual discovery</text>
+<text x="60" y="98" class="s">Nine source-led candidates: three each in French, Arabic and Portuguese</text>
+<line x1="120" y1="600" x2="1120" y2="600" class="g"/><line x1="120" y1="450" x2="1120" y2="450" class="g"/><line x1="120" y1="300" x2="1120" y2="300" class="g"/><line x1="120" y1="150" x2="1120" y2="150" class="g"/>
+<text x="95" y="606" class="n">0</text><text x="95" y="456" class="n">1</text><text x="95" y="306" class="n">2</text><text x="95" y="156" class="n">3</text>
+<rect x="220" y="150" width="70" height="450" fill="#333"/><text x="255" y="140" class="v" text-anchor="middle">3</text>
+<rect x="300" y="150" width="70" height="450" fill="#888"/><text x="335" y="140" class="v" text-anchor="middle">3</text>
+<rect x="380" y="300" width="70" height="300" fill="#c2c2c2"/><text x="415" y="290" class="v" text-anchor="middle">2</text>
+<text x="335" y="640" class="l" text-anchor="middle">French</text>
+<rect x="535" y="150" width="70" height="450" fill="#333"/><text x="570" y="140" class="v" text-anchor="middle">3</text>
+<rect x="615" y="150" width="70" height="450" fill="#888"/><text x="650" y="140" class="v" text-anchor="middle">3</text>
+<rect x="695" y="150" width="70" height="450" fill="#c2c2c2"/><text x="730" y="140" class="v" text-anchor="middle">3</text>
+<text x="650" y="640" class="l" text-anchor="middle">Arabic</text>
+<rect x="850" y="150" width="70" height="450" fill="#333"/><text x="885" y="140" class="v" text-anchor="middle">3</text>
+<rect x="930" y="450" width="70" height="150" fill="#888"/><text x="965" y="440" class="v" text-anchor="middle">1</text>
+<rect x="1010" y="450" width="70" height="150" fill="#c2c2c2"/><text x="1045" y="440" class="v" text-anchor="middle">1</text>
+<text x="965" y="640" class="l" text-anchor="middle">Portuguese</text>
+<rect x="190" y="684" width="22" height="14" fill="#333"/><text x="220" y="696" class="n">Candidate records</text>
+<rect x="420" y="684" width="22" height="14" fill="#888"/><text x="450" y="696" class="n">Unique countries</text>
+<rect x="650" y="684" width="22" height="14" fill="#c2c2c2"/><text x="680" y="696" class="n">New countries vs core</text>
+<text x="60" y="735" class="n">Sample sizes were fixed by design; country yield is descriptive, not a language prevalence comparison.</text>
+</svg>
