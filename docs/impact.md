@@ -38,8 +38,8 @@ Machine-readable archive provenance, including the GitHub release, exact source 
 
 | AAIO ID | Upstream destination | Submission status | External ID | Evidence |
 |---|---|---|---|---|
-| AAIO-0018 | AI Incident Database | Prepared, not yet claimed as submitted | — | `docs/aiid-submission-packet.md` |
-| AAIO-0019 | AI Incident Database | Prepared, not yet claimed as submitted | — | `docs/aiid-submission-packet.md` |
+| AAIO-0018 | AI Incident Database | Duplicate search completed; no equivalent identified; not submitted | — | `docs/aiid-submission-packet.md`; issue #9 |
+| AAIO-0019 | AI Incident Database | Equivalent incident identified; no new-incident submission should be made | AIID 1138 | issue #9; https://incidentdatabase.ai/cite/1138 |
 
 ## Contributions
 
@@ -49,7 +49,7 @@ Machine-readable archive provenance, including the GitHub release, exact source 
 
 ## Presentations and publications
 
-Only externally published or publicly listed outputs should be added here. Drafts, private talks and planned submissions should remain outside the verified ledger until there is public evidence.
+Only externally published or publicly listed outputs should be added here. Internal analysis completion is not counted as external impact. Drafts, private talks and planned submissions should remain outside the verified ledger until there is public evidence.
 
 ## Maintenance rule
 
