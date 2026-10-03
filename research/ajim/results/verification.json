@@ -21,9 +21,36 @@
     "OECD mandatory direct percentage"
   ],
   "recomputed_distributions": {
-    "core_evidence_confidence": {"A": 10, "B": 8, "C": 1},
-    "multilingual_evidence_confidence": {"A": 7, "B": 2},
-    "oecd_mapping_status": {"direct": 3, "partial": 6, "approximate": 3, "unmapped": 17},
-    "oecd_mandatory_status": {"direct": 3, "partial": 1, "approximate": 1, "unmapped": 2}
-  }
+    "core_evidence_confidence": {
+      "A": 10,
+      "B": 8,
+      "C": 1
+    },
+    "multilingual_evidence_confidence": {
+      "A": 7,
+      "B": 2
+    },
+    "oecd_mapping_status": {
+      "direct": 3,
+      "partial": 6,
+      "approximate": 3,
+      "unmapped": 17
+    },
+    "oecd_mandatory_status": {
+      "direct": 3,
+      "partial": 1,
+      "approximate": 1,
+      "unmapped": 2
+    }
+  },
+  "final_audit_date": "2026-10-03",
+  "final_audit_status": "PASS",
+  "final_audit_notes": [
+    "Recomputed core, watchlist, multilingual, country-coverage, AIID cross-reference and OECD mapping counts from frozen inputs.",
+    "Confirmed all seven committed publication tables agree with results-summary.json.",
+    "Confirmed all four SVG figures use values traceable to committed result tables or results-summary.json.",
+    "Re-located all nine multilingual source records in current web retrieval/search across AFP Factuel, Misbar, Verifica.ao and Lusa Verifica.",
+    "No second independent human coder was used; no inter-rater reliability claim is permitted."
+  ],
+  "research_complete_for_current_design": true
 }
