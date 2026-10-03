@@ -19,5 +19,11 @@
     "numeric_checks_recomputed": 15,
     "failed_checks": 0
   },
-  "claim_boundary": "Counts describe the frozen documentation corpus and must not be interpreted as national AI incident prevalence."
+  "claim_boundary": "Counts describe the frozen documentation corpus and must not be interpreted as national AI incident prevalence.",
+  "provenance_companion": {
+    "path": "research/ajim/frozen/multilingual-provenance.csv",
+    "git_blob_sha": "857f1d20d65e6ca92693080c291f077aae7eb825",
+    "records": 9,
+    "last_source_recheck": "2026-10-03"
+  }
 }
