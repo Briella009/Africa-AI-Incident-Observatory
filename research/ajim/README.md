@@ -57,3 +57,8 @@ The corpus is purposive and documentation-based. Country counts must not be used
 ## Post-freeze upstream note
 
 AAIO issue #9 later identified an existing AIID incident corresponding to AAIO-0019. The frozen core still has a null AIID field for that record because the repository workflow requires a verified upstream acceptance/merge outcome before changing the core dataset. This preserves reproducibility of the frozen 17/19 populated-cross-reference statistic.
+
+
+## Completion status
+
+Frozen numerical outputs were rechecked on 3 October 2026 against the committed inputs and remain internally consistent. The data collection and descriptive analysis are complete for the current study design.
