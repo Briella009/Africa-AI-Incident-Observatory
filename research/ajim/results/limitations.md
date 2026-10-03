@@ -23,3 +23,7 @@
 11. **Post-freeze upstream changes.** A later duplicate check identified an existing AIID incident corresponding to AAIO-0019, but the frozen dataset retains its original null upstream identifier because the repository workflow requires an externally verified acceptance/merge outcome before altering the core record. The frozen statistics therefore remain reproducible from the recorded inputs.
 
 12. **No causal comparison across languages.** The result that multilingual discovery added six previously unrepresented countries cannot establish that language alone caused under-documentation. Search strategy, source networks, editorial priorities and publication availability are plausible co-determinants.
+
+13. **Single-curator coding.** AAIO coding was not independently double-coded for this study, so no inter-rater reliability statistic is reported. The paper must present this transparently and must not imply independent coder agreement.
+
+14. **Manuscript-use boundary.** Repository prose is an analysis aid and reproducibility record. It should not be copied into a journal submission where the publisher requires author-written manuscript text.
