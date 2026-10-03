@@ -1,10 +1,10 @@
-record_id,source_name,source_locator,verified_date
-AAIO-ML-0001,AFP Factuel,AFP-B7WL363,2026-10-03
-AAIO-ML-0002,Misbar,Misbar-2023-05-25-Morocco-source,2026-10-03
-AAIO-ML-0003,Verifica.ao,Verifica-2026-07-09-Angola-source,2026-10-03
-AAIO-ML-0004,AFP Factuel,AFP-36WA3YZ,2026-10-03
-AAIO-ML-0005,AFP Factuel,AFP-97VP4KF,2026-10-03
-AAIO-ML-0006,Misbar,Misbar-2024-06-03-Algeria-source,2026-10-03
-AAIO-ML-0007,Misbar,Misbar-2024-08-22-Egypt-source,2026-10-03
-AAIO-ML-0008,Lusa Verifica,Lusa-2025-11-17-Angola-source,2026-10-03
-AAIO-ML-0009,Verifica.ao,Verifica-2025-12-17-Angola-source,2026-10-03
+record_id,source_name,source_locator,verified_date,evidence_basis
+AAIO-ML-0001,AFP Factuel,AFP-B7WL363,2026-10-03,"Source traced prior footage and described likely AI alteration."
+AAIO-ML-0002,Misbar,Misbar-2023-05-25-Morocco-source,2026-10-03,"Source traced the image origin to an AI-art account."
+AAIO-ML-0003,Verifica.ao,Verifica-2026-07-09-Angola-source,2026-10-03,"Source reported AI-generated or manipulated images and checked the event context."
+AAIO-ML-0004,AFP Factuel,AFP-36WA3YZ,2026-10-03,"Source matched the clip to official footage and documented AI modification."
+AAIO-ML-0005,AFP Factuel,AFP-97VP4KF,2026-10-03,"Source matched the clip to an original press conference and reported AI modification."
+AAIO-ML-0006,Misbar,Misbar-2024-06-03-Algeria-source,2026-10-03,"Source traced the image origin and documented visual and geographic inconsistencies."
+AAIO-ML-0007,Misbar,Misbar-2024-08-22-Egypt-source,2026-10-03,"Source compared the viral image with documented real-event imagery and reported AI-generation indicators."
+AAIO-ML-0008,Lusa Verifica,Lusa-2025-11-17-Angola-source,2026-10-03,"Source compared the viral image with archival and official material."
+AAIO-ML-0009,Verifica.ao,Verifica-2025-12-17-Angola-source,2026-10-03,"Source recorded the subject's denial and a technical review of the video."
