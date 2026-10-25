@@ -14,7 +14,16 @@
 
 **Current dataset:** v0.2.3 · 19 curated core records · 9 primary African countries · 3 multilingual source families · operational evidence provenance · AIID/OECD semantic interoperability · scheduled public-source resilience monitoring · DOI-backed v0.2.0 archive
 
-**Quick links:** [Explore data](data/incidents.csv) · [Dashboard](https://aaio-africa.streamlit.app/) · [Methodology](docs/methodology.md) · [Dataset card](docs/dataset-card.md) · [Data dictionary](docs/data-dictionary.md) · [Interoperability](docs/interoperability.md) · [Source resilience](docs/source-resilience.md) · [Archived releases](metadata/archived-releases.json) · [Contribute](https://github.com/Briella009/Africa-AI-Incident-Observatory/issues/new?template=incident_submission.yml) · [Citation](CITATION.cff)
+**Quick links:** [Explore data](data/incidents.csv) · [Dashboard](https://aaio-africa.streamlit.app/) · [Methodology](docs/methodology.md) · [Dataset card](docs/dataset-card.md) · [Data dictionary](docs/data-dictionary.md) · [Interoperability](docs/interoperability.md) · [Source resilience](docs/source-resilience.md) · [Archived releases](metadata/archived-releases.json) · [Contribute](CONTRIBUTING.md) · [Citation](CITATION.cff)
+
+## Explore AAIO in 60 seconds
+
+1. Open the **[live dashboard](https://aaio-africa.streamlit.app/)**.
+2. Inspect a core incident and follow its public evidence trail.
+3. Compare the incident record with the [methodology](docs/methodology.md) and [data dictionary](docs/data-dictionary.md).
+4. Open [`data/incidents.csv`](data/incidents.csv) to see the same evidence in machine-readable form.
+
+If AAIO is useful for your research or governance work, **star the repository to follow dataset releases**, **fork it for reproducible analysis**, or contribute new evidence/data-quality improvements through [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Why this exists
 
