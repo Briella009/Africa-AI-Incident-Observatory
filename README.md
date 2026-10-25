@@ -16,6 +16,14 @@
 
 **Quick links:** [Explore data](data/incidents.csv) · [Dashboard](https://aaio-africa.streamlit.app/) · [Methodology](docs/methodology.md) · [Dataset card](docs/dataset-card.md) · [Data dictionary](docs/data-dictionary.md) · [Interoperability](docs/interoperability.md) · [Source resilience](docs/source-resilience.md) · [Archived releases](metadata/archived-releases.json) · [Contribute](CONTRIBUTING.md) · [Citation](CITATION.cff)
 
+<p align="center">
+  <a href="https://aaio-africa.streamlit.app/">
+    <img src="assets/screenshots/aaio-demo.gif" alt="Africa AI Incident Observatory dashboard showing the public dataset snapshot, incident explorer, and evidence-quality view" width="100%" />
+  </a>
+</p>
+
+<p align="center"><em>Real AAIO v0.2.3 dashboard captured from the repository app and public dataset.</em></p>
+
 ## Explore AAIO in 60 seconds
 
 1. Open the **[live dashboard](https://aaio-africa.streamlit.app/)**.
