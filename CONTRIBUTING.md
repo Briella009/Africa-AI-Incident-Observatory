@@ -43,6 +43,19 @@ Use the **Data correction** template for factual errors, broken links, date chan
 
 Material changes to a core incident should also add an entry to `data/record_history.csv`. Typographical changes that do not alter meaning do not require a history entry.
 
+## Starter pull requests
+
+New incident records should continue through the evidence-review workflow first, but contributors can make useful direct PRs such as:
+
+- add or improve a validator test for an existing schema rule;
+- improve source-resilience tooling or tests;
+- improve dataset-card, data-dictionary, interoperability, or methodology documentation;
+- add a reproducible analysis notebook that reads the public dataset without modifying core records;
+- improve accessibility or dashboard documentation;
+- add a test for multilingual/provenance edge cases using public or synthetic fixtures.
+
+Keep first contributions narrow and independently reviewable.
+
 ## Pull requests
 
 Run the full validation path:
